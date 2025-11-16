@@ -1481,7 +1481,7 @@ const LearningPage = ({ language, setLanguage, feature, currentStep, totalSteps,
   const [diagramStep, setDiagramStep] = useState(0);
   const [isDiagramPlaying, setIsDiagramPlaying] = useState(false);
   const recognitionRef = useRef(null);
-  const groq = new Groq({apiKey:import.meta.env.VITE_GROQ_KEY})
+  const groq = new Groq({apiKey:import.meta.env.VITE_GROQ_KEY,dangerouslyAllowBrowser: true})
   // Interactive Diagrams for each feature
   const featureDiagrams = {
     0: {
