@@ -15,7 +15,9 @@ import FPOs from "./pages/FPOs"
 import InstitutionalBuyers from "./pages/InstitutionalBuyers"
 function AppContent() {
   const { pathname } = useLocation();
-  const hideLanguageSelector = pathname === "/farmer-dashboard" || "/other";
+  const hideLanguageSelector =
+  pathname === "/farmer-dashboard" || pathname === "/other";
+
 
   return (
     <LanguageProvider>
